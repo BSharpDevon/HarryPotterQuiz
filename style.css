@@ -1,0 +1,197 @@
+/* The '*' affects everything/all elements */
+* {
+  font-family: "Cinzel Decorative", sans-serif, verdana, arial; /* The chosen font and backup font */
+}
+
+/* Styling the body, including background image properties */
+body {
+  background-image: url(https://i.pinimg.com/originals/82/db/e4/82dbe432ac5a60545f63c1a904b670c7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Styling the header */
+#header {
+  width: 75%;
+  background-color: lightgrey;
+  opacity: 0.9;
+  text-align: center;
+  font-size: 2em;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 5px 5px 8px black;
+}
+
+/* Styling the declareHouse, quizQuestions, and quizScores divs */
+#declareHouse,
+.quizQuestions,
+#quizScores {
+  width: 75%;
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: lightgrey;
+  opacity: 0.9;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 8px black;
+}
+
+/* Styling the start and reset quiz buttons */
+#startQuiz,
+#resetQuizBtn {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#startQuiz:hover,
+#resetQuizBtn:hover {
+  background-color: slategray;
+  color: white;
+  opacity: 70%;
+  transform: scale(1.02);
+  transition: transform 0.3s;
+}
+
+/* Initially hides quiz questions and scores until shown */
+.quizQuestions,
+#quizScores {
+  display: none;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+#declareHouse.show,
+.quizQuestions.show,
+#quizScores.show {
+  display: flex;
+  opacity: 0.9;
+}
+
+/* Styling the house buttons and answer choices */
+.houseButtons,
+.radioAnswers {
+  width: 40%;
+  border: 1px solid;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+  box-shadow: 2px 2px 2px black;
+}
+
+.radioAnswers label {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.houseButtons {
+  width: 90%;
+}
+
+.houseButtons:hover {
+  color: white;
+  opacity: 70%;
+  transform: scale(1.02);
+  transition: transform 0.3s;
+  font-weight: bold;
+}
+/* Hover effects for house selection buttons */
+#gryffindorOption:hover {
+  background-color: #740001;
+  color: gold;
+}
+
+#slytherinOption:hover {
+  background-color: #0d6217;
+  color: silver;
+}
+
+#ravenclawOption:hover {
+  background-color: #0e1a40;
+  color: silver;
+}
+
+#hufflepuffOption:hover {
+  background-color: #fdb913;
+  color: black;
+}
+
+/* Styling for question labels */
+.questionLabel {
+  padding: 10px 0px 20px 0px;
+  width: 97%;
+}
+
+/* Hides default radio button circles */
+.radioAnswers input[type="radio"] {
+  display: none;
+}
+
+.radioAnswers:hover {
+  background-color: lightgrey;
+  opacity: 70%;
+  transform: scale(1.02);
+  transition: transform 0.3s;
+}
+
+/* Styling for results container */
+.results {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Styling the footer */
+footer {
+  background-color: lightgrey;
+  opacity: 0.9;
+  padding: 20px;
+  border-radius: 20px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 8px black;
+}
+
+/* Styling the LinkedIn image to have a shadow */
+#linkedInImg {
+  box-shadow: 1px 1px 5px white;
+  border-radius: 20px;
+}
