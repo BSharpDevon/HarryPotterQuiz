@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declaring the language of the site - English. -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Indicates the character encoding for this document. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the size adjusts to the size of the device viewing it. -->
+
+  <title>Harry Potter Fan Website</title><!-- My website name. -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to google fonts -->
+  <link rel="stylesheet" href="style.css"> <!-- Links the html doc to my style sheet. -->
+</head>
+
+<body>
+
+  <!-- Website header area. -->
+  <div class="backgroundColor" id="header">
+    <h1 id="websiteTitle"> - QUIZ - <br> Test your Potter Knowledge </h1>
+  </div>
+
+  <main>
+    <!-- Favourite House selection section -->
+    <div class="backgroundColor" id="declareHouse">
+      <label for="hogwartsHouse" class="questionLabel">Your favourite Hogwarts house:</label>
+      <!-- House selection buttons -->
+      <button class="houseButtons" id="gryffindorOption">Gryffindor</button>
+      <button class="houseButtons" id="slytherinOption">Slytherin</button>
+      <button class="houseButtons" id="ravenclawOption">Ravenclaw</button>
+      <button class="houseButtons" id="hufflepuffOption">Hufflepuff</button>
+      <button id="startQuiz">Start quiz</button>
+    </div>
+
+    <!-- Quiz Questions Section -->
+    <!-- Each question follows the same structure with a label and multiple choice answers -->
+
+    <!-- Quiz Question 1 -->
+    <div class="quizQuestions" id="quizQuestionOne">
+      <label class="questionLabel">What is the name of the magical map that shows the entire layout of Hogwarts?</label>
+      <!-- Question 1, Answer 1 with radio button. -->
+      <div class="radioAnswers">
+        <label for="questionOneAnswerOne">Marauder's Map
+          <input type="radio" id="questionOneAnswerOne" value="Marauder's Map" name="questionOneAnswers"> <!-- Correct Answer -->
+        </label>
+      </div>
+      <!-- Question 1, Answer 2 with radio button. -->
+      <div class="radioAnswers">
+        <label for="questionOneAnswerTwo">Mitilda's Map
+          <input type="radio" id="questionOneAnswerTwo" value="Mitilda's Map" name="questionOneAnswers">
+        </label>
+      </div>
+      <!-- Question 1, Answer 3 with radio button. -->
+      <div class="radioAnswers">
+        <label for="questionOneAnswerThree">Minerva's Map
+          <input type="radio" id="questionOneAnswerThree" value="Minerva's Map" name="questionOneAnswers">
+        </label>
+      </div>
+      <!-- Question 1, Answer 4 with radio button. -->
+      <div class="radioAnswers">
+        <label for="questionOneAnswerFour">Molly's Map
+          <input type="radio" id="questionOneAnswerFour" value="Molly's Map" name="questionOneAnswers">
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz question 2. -->
+    <div class="quizQuestions" id="quizQuestionTwo">
+      <label class="questionLabel">What is the name of the magical creature that can only be seen by those who have witnessed death?</label>
+      <!-- Question 2, Answer 1 with radio button. -->
+      <div class="radioAnswers">
+        <labelfor="questionTwoAnswerOne">Thunderbird
+          <input type="radio" id="questionTwoAnswerOne" value="Thunderbird" name="questionTwoAnswers">
+          </label>
+      </div>
+      <!-- Question 2, Answer 2 with radio button.-->
+      <div class="radioAnswers">
+        <label for="questionTwoAnswerTwo">Thestral
+          <input type="radio" id="questionTwoAnswerTwo" value="Thestral" name="questionTwoAnswers"> <!-- Correct Answer -->
+        </label>
+      </div>
+      <!-- Question 2, Answer 3, with radio button. -->
+      <div class="radioAnswers">
+        <label for="questionTwoAnswerThree">Nundu
+          <input type="radio" id="questionTwoAnswerThree" value="Nundu" name="questionTwoAnswers">
+        </label>
+      </div>
+      <!-- Question 2, Answer 4 with radio button. -->
+      <div class="radioAnswers">
+        <label for="questionTwoAnswerFour">Thornback
+          <input type="radio" id="questionTwoAnswerFour" value="Thornback" name="questionTwoAnswers">
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz question 3. -->
+    <div class="quizQuestions" id="quizQuestionThree">
+      <label class="questionLabel">What is the incantation for the spell that reveals invisible ink?</label>
+      <div class="radioAnswers">
+        <label for="questionThreeAnswerOne">Lumos
+          <input type="radio" id="questionThreeAnswerOne" value="Lumos" name="questionThreeAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionThreeAnswerTwo">Revelio
+          <input type="radio" id="questionThreeAnswerTwo" value="Revelio" name="questionThreeAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionThreeAnswerThree">Aparecium
+          <!-- Correct Answer -->
+          <input type="radio" id="questionThreeAnswerThree" value="Aparecium" name="questionThreeAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionThreeAnswerFour">Expecto Patronum
+          <input type="radio" id="questionThreeAnswerFour" value="Expecto Patronum" name="questionThreeAnswers">
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz question 4. -->
+
+    <div class="quizQuestions" id="quizQuestionFour">
+      <!-- Question 4 text. -->
+      <label class="questionLabel">Who wrote 'A History of Magic' in Harry Potter?</label>
+
+      <!-- Question 4, Answer 1 with radio button. -->
+      <div class="radioAnswers">
+        <label for="questionFourAnswerOne">Newt Scamander
+          <input type="radio" id="questionFourAnswerOne" value="Newt Scamander" name="questionFourAnswers">
+        </label>
+      </div>
+
+      <!-- Question 4, Answer 2 with radio button. -->
+      <div class="radioAnswers">
+        <label for="questionFourAnswerTwo">Beedle the Bard
+          <input type="radio" id="questionFourAnswerTwo" value="Beedle the Bard" name="questionFourAnswers">
+        </label>
+      </div>
+
+      <!-- Question 4, Answer 3 with radio button. -->
+      <div class="radioAnswers">
+        <label for="questionFourAnswerThree">Bathilda Bagshot
+          <input type="radio" id="questionFourAnswerThree" value="Bathilda Bagshot" name="questionFourAnswers"> <!-- Correct Answer -->
+        </label>
+      </div>
+
+      <!-- Question 4, Answer 4 with radio button. -->
+      <div class="radioAnswers">
+        <label for="questionFourAnswerFour">Phyllida Spore
+          <input type="radio" id="questionFourAnswerFour" value="Phyllida Spore" name="questionFourAnswers">
+        </label>
+      </div>
+    </div>
+    </div>
+
+    <div class="quizQuestions" id="quizQuestionFive">
+      <label class="questionLabel">Which vault in Gringotts was the Philosopher's Stone kept in?</label>
+      <div class="radioAnswers">
+        <label for="questionFiveAnswerOne">Vault 713
+          <!-- Correct Answer -->
+          <input type="radio" id="questionFiveAnswerOne" value="Vault 713" name="questionFiveAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionFiveAnswerTwo">Vault 666
+          <input type="radio" id="questionFiveAnswerTwo" value="Vault 666" name="questionFiveAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionFiveAnswerThree">Vault 777
+          <input type="radio" id="questionFiveAnswerThree" value="Vault 777" name="questionFiveAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionFiveAnswerFour">Vault 324
+          <input type="radio" id="questionFiveAnswerFour" value="Vault 324" name="questionFiveAnswers">
+        </label>
+      </div>
+    </div>
+
+    <div class="quizQuestions" id="quizQuestionSix">
+      <label class="questionLabel">What is the name of Hermione Granger's cat?</label>
+      <div class="radioAnswers">
+        <label for="questionSixAnswerOne">Crookshanks
+          <!-- Correct Answer -->
+          <input type="radio" id="questionSixAnswerOne" value="Crookshanks" name="questionSixAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionSixAnswerTwo">Scabbers
+          <input type="radio" id="questionSixAnswerTwo" value="Scabbers" name="questionSixAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionSixAnswerThree">Fluffy
+          <input type="radio" id="questionSixAnswerThree" value="Fluffy" name="questionSixAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionSixAnswerFour">Mrs. Norris
+          <input type="radio" id="questionSixAnswerFour" value="Mrs. Norris" name="questionSixAnswers">
+        </label>
+      </div>
+    </div>
+
+    <div class="quizQuestions" id="quizQuestionSeven">
+      <label class="questionLabel">What is the name of the school that Harry Potter attends?</label>
+      <div class="radioAnswers">
+        <label for="questionSevenAnswerOne">Durmstrang
+          <input type="radio" id="questionSevenAnswerOne" value="Durmstrang" name="questionSevenAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionSevenAnswerTwo">Beauxbatons
+          <input type="radio" id="questionSevenAnswerTwo" value="Beauxbatons" name="questionSevenAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionSevenAnswerThree">Hogwarts
+          <!-- Correct Answer -->
+          <input type="radio" id="questionSevenAnswerThree" value="Hogwarts" name="questionSevenAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionSevenAnswerFour">Ilvermorny
+          <input type="radio" id="questionSevenAnswerFour" value="Ilvermorny" name="questionSevenAnswers">
+        </label>
+      </div>
+    </div>
+
+    <div class="quizQuestions" id="quizQuestionEight">
+      <label class="questionLabel">What is the name of the ghost who haunts the girls' bathroom?</label>
+      <div class="radioAnswers">
+        <label for="questionEightAnswerOne">Nearly Headless Nick
+          <input type="radio" id="questionEightAnswerOne" value="Nearly Headless Nick" name="questionEightAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionEightAnswerTwo">The Grey Lady
+          <input type="radio" id="questionEightAnswerTwo" value="The Grey Lady" name="questionEightAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionEightAnswerThree">The Bloody Baron
+          <input type="radio" id="questionEightAnswerThree" value="The Bloody Baron" name="questionEightAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionEightAnswerFour">Moaning Myrtle
+          <!-- Correct Answer -->
+          <input type="radio" id="questionEightAnswerFour" value="Moaning Myrtle" name="questionEightAnswers">
+        </label>
+      </div>
+    </div>
+
+    <div class="quizQuestions" id="quizQuestionNine">
+      <label class="questionLabel">What is the name of Harry Potter’s father?</label>
+      <div class="radioAnswers">
+        <label for="questionNineAnswerOne">James Potter
+          <!-- Correct Answer -->
+          <input type="radio" id="questionNineAnswerOne" value="James Potter" name="questionNineAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionNineAnswerTwo">Lily Potter
+          <input type="radio" id="questionNineAnswerTwo" value="Lily Potter" name="questionNineAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionNineAnswerThree">Sirius Black
+          <input type="radio" id="questionNineAnswerThree" value="Sirius Black" name="questionNineAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionNineAnswerFour">Remus Lupin
+          <input type="radio" id="questionNineAnswerFour" value="Remus Lupin" name="questionNineAnswers">
+        </label>
+      </div>
+    </div>
+
+    <div class="quizQuestions" id="quizQuestionTen">
+      <label class="questionLabel">Which of these characters is not a Death Eater?</label>
+      <div class="radioAnswers">
+        <label for="questionTenAnswerOne">Bellatrix Lestrange
+          <input type="radio" id="questionTenAnswerOne" value="Bellatrix Lestrange" name="questionTenAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionTenAnswerTwo">Lucius Malfoy
+          <input type="radio" id="questionTenAnswerTwo" value="Lucius Malfoy" name="questionTenAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionTenAnswerThree">Severus Snape
+          <input type="radio" id="questionTenAnswerThree" value="Severus Snape" name="questionTenAnswers">
+        </label>
+      </div>
+      <div class="radioAnswers">
+        <label for="questionTenAnswerFour">Kingsley Shacklebolt
+          <!-- Correct Answer -->
+          <input type="radio" id="questionTenAnswerFour" value="Kingsley Shacklebolt" name="questionTenAnswers">
+        </label>
+      </div>
+    </div>
+
+    <!-- Final scores section -->
+
+    <div class="backgroundColor" id="quizScores">
+      <h3 id="finalScoreSection"></h3>
+      <button id="resetQuizBtn">Reset Quiz</button>
+
+  </main>
+
+  <!-- Footer content -->
+  <footer class="backgroundColor">
+    <b>Author:</b> Beth Sharp<br><br>
+    Code first Girls Graduate: Full Stack degree: Autumn 2024 cohort. <br><br>
+    <a href="https://linkedin.com/in/beth-sharp-93b758105"><img id="linkedInImg" height="60px" src="https://martechcube.com/wp-content/uploads/2015/09/linkedin-button.png">
+    </a>
+
+  </footer>
+  <script src="index.js"></script> <!-- Linking the Javascript document to the html document. -->
+</body>
+
+</html>
