@@ -178,21 +178,20 @@ function showNextQuestion(currentIndex) {
       resultsDiv.classList.add("show");
       resultsDiv.classList.add("fade-in");
     }, 50);
-    checkAllResults();
   }
 }
 
 const correctAnswers = {
-  quizQuestionOne: "Marauder's Map",
-  quizQuestionTwo: "Thestral",
-  quizQuestionThree: "Aparecium",
-  quizQuestionFour: "Bathilda Bagshot",
-  quizQuestionFive: "Vault 713",
-  quizQuestionSix: "Crookshanks",
-  quizQuestionSeven: "Hogwarts",
-  quizQuestionEight: "Moaning Myrtle",
-  quizQuestionNine: "James Potter",
-  QuizQuestionTen: "Kingsley Shacklebolt"
+  questionOneAnswers: "Marauder's Map",
+  questionTwoAnswers: "Thestral",
+  questionThreeAnswers: "Aparecium",
+  questionFourAnswers: "Bathilda Bagshot",
+  questionFiveAnswers: "Vault 713",
+  questionSixAnswers: "Crookshanks",
+  questionSevenAnswers: "Hogwarts",
+  questionEightAnswers: "Moaning Myrtle",
+  questionNineAnswers: "James Potter",
+  questionTenAnswers: "Kingsley Shacklebolt"
 };
 
 let housePoints = 0; // A place to store the house points
@@ -204,16 +203,14 @@ function checkAllResults() {
   Object.keys(correctAnswers).forEach((question) => {
     // checks all the answers for the selected question
     const selectedAnswer = document.querySelector(
-      `input[name="${question}Answers"]:checked`
+      `input[name="${question}"]:checked`
     );
 
     if (selectedAnswer) {
-      if (selectedAnswer.value === correctAnswers[question]) {
+      if (selectedAnswer.value === correctAnswers[selectedAnswer.name]) {
         housePoints += 20; // Increase score by 20 for correct answer
-        console.log("Correct. 20 house points for you!");
       } else {
         housePoints++; // Increment score by 1 for each attempt
-        console.log("Nope. Have a house points for trying.");
       }
     }
   });
@@ -260,8 +257,19 @@ questions.forEach((question, index) => {
       const radioAnswerDiv = radioButton.closest(".radioAnswers");
       // check if answer is correct
       let answer = radioButton.value;
+
       // gets the correct answer from the correctAnswers object
-      let correctAnswer = correctAnswers[quizQuestionID];
+      let questionName = radioButton.name;
+      let correctAnswer = correctAnswers[questionName];
+
+      console.log(`Checking question: ${questionName}`);
+      console.log(`User Answer: ${answer}, Correct Answer: ${correctAnswer}`);
+
+      if (correctAnswer === undefined) {
+        console.error(`Correct answer not found for key: ${questionName}`);
+        return;
+      }
+
       // resets previously selected answers
       if (lastAnswerSelected) {
         lastAnswerSelected.style.backgroundColor = "white";
@@ -271,9 +279,15 @@ questions.forEach((question, index) => {
         answer === correctAnswer ? "lightgreen" : "lightcoral";
       // store the current selection
       lastAnswerSelected = radioAnswerDiv;
+
       //Delays the next question appearing, to see what answers where right (red and green)
       setTimeout(() => {
-        showNextQuestion(index);
+        if (index === questions.length - 1) {
+          checkAllResults();
+          showNextQuestion(index);
+        } else {
+          showNextQuestion(index);
+        }
       }, 1000);
     });
   });
